@@ -1,0 +1,5 @@
+.*
+!.gitignore
+Benchmark-Perl-Formance-Plugin-Mandelbrot*
+Debian_CPANTS.txt
+nytprof*
