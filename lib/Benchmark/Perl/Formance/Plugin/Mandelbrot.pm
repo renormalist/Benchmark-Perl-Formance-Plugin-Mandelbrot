@@ -8,7 +8,7 @@ package Benchmark::Perl::Formance::Plugin::Mandelbrot;
 
 our @default_subtests = qw( withmce );
 
-sub perlstone
+sub run
 {
         my ($options) = @_;
 
@@ -45,7 +45,7 @@ sub main
 {
         my ($options) = @_;
 
-        my $results = perlstone($options);
+        my $results = run($options);
 
         return $results;
 }
@@ -78,9 +78,16 @@ __END__
 
 Main entry point to start the benchmarks.
 
-=head2 perlstone
+=head2 run
 
-The primary benchmarking function which in turn starts the sub
-benchmarks.
+Iterates over the available mandelbrot sub implementations and
+collects the results.
+
+=head2 AUTHOR
+
+Mario Roy did the actual MCE-based Mandelbrot implementation.
+
+Steffen Schwigon wrapped it into a
+L<Benchmark::Perl::Formance|Benchmark::Perl::Formance> plugin.
 
 =cut
