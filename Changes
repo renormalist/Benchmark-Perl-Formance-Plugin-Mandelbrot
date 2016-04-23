@@ -1,4 +1,4 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-        - a Benchmark::Perl::Formance plugin combining mandelbrot variants
+        - a Benchmark::Perl::Formance plugin collecting mandelbrot variants
