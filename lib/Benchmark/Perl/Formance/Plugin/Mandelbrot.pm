@@ -6,7 +6,7 @@ use warnings;
 package Benchmark::Perl::Formance::Plugin::Mandelbrot;
 # ABSTRACT: Benchmark::Perl::Formance plugin - more modern mandelbrot
 
-our @default_subtests = qw( withmce );
+our @default_subtests = qw( withmce withthreads );
 
 sub run
 {
