@@ -1,5 +1,5 @@
 package Benchmark::Perl::Formance::Plugin::Mandelbrot::withmce;
-# ABSTRACT: benchmark - Generate Mandelbrot set portable bitmap file
+# ABSTRACT: benchmark - Generate Mandelbrot set portable bitmap file - using MCE
 
 # http://www.perlmonks.org/?node_id=1129370
 
@@ -80,7 +80,7 @@ sub main
 {
         my ($options) = @_;
 
-        my $goal   = $options->{fastmode} ? 600 : 2_000;
+        my $goal   = $options->{fastmode} ? 400 : 2_000;
         my $count  = $options->{fastmode} ? 1   : 5;
 
         my $result;
